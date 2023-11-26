@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { delay, map, of } from 'rxjs';
+import { Component, afterNextRender } from '@angular/core';
 
 @Component({
   selector: 'heavy-component',
@@ -8,14 +7,17 @@ import { delay, map, of } from 'rxjs';
   imports: [CommonModule],
   template: `
     HEAVY LOADED:
-    <p>{{ title$ | async }}</p>
+    <p>{{ title }}</p>
   `,
 })
 export class HeavyComponent {
-  title$ = of('Heavy Component').pipe(
-    delay(1000),
-    map((title) => `${title} loaded!`)
-  );
+  title: string = 'Heavy Component';
+
+  constructor() {
+    afterNextRender(() => {
+      this.title = 'Heavy Component Loaded';
+    });
+  }
 }
 
 @Component({
