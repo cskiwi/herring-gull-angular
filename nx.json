@@ -56,7 +56,7 @@
     ],
     "sharedGlobals": []
   },
-  "defaultProject": "angular-nestjs-vite",
+  "defaultProject": "gull",
   "generators": {
     "@nx/angular:application": {
       "style": "scss",

@@ -1,9 +1,9 @@
 {
-  "name": "angular-nestjs-vite",
+  "name": "gull",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "angular-monorepo",
-  "sourceRoot": "apps/angular-nestjs-vite/src",
+  "sourceRoot": "apps/gull/src",
   "tags": [],
   "targets": {
     "build": {
@@ -14,7 +14,7 @@
         "{workspaceRoot}/dist/server"
       ],
       "options": {
-        "cwd": "apps/angular-nestjs-vite",
+        "cwd": "apps/gull",
         "command": "vite build && vite build --ssr"
       },
       "defaultConfiguration": "production",
@@ -36,10 +36,10 @@
         "{workspaceRoot}/dist/server"
       ],
       "options": {
-        "main": "apps/angular-nestjs-vite/src/main.ts",
-        "configFile": "apps/angular-nestjs-vite/vite.config.ts",
+        "main": "apps/gull/src/main.ts",
+        "configFile": "apps/gull/vite.config.ts",
         "logLevel": "info",
-        "outputPath": "dist/apps/angular-nestjs-vite/client"
+        "outputPath": "dist/apps/gull/client"
       },
       "defaultConfiguration": "production",
       "configurations": {
@@ -56,34 +56,40 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "angular-nestjs-vite:build-dev",
+        "buildTarget": "gull:build-dev",
         "port": 5200
       },
       "configurations": {
         "development": {
-          "buildTarget": "angular-nestjs-vite:build-dev:development",
+          "buildTarget": "gull:build-dev:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "angular-nestjs-vite:build-dev:production"
+          "buildTarget": "gull:build-dev:production"
         }
       }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "angular-nestjs-vite:build"
+        "buildTarget": "gull:build"
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{projectRoot}/coverage"]
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/angular-nestjs-vite/**/*.{ts,html}"]
+        "lintFilePatterns": [
+          "apps/gull/**/*.{ts,html}"
+        ]
       }
     }
   }

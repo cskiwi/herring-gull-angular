@@ -1,15 +1,15 @@
 {
-  "name": "angular-nestjs-vite-e2e",
+  "name": "gull-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/angular-nestjs-vite-e2e/src",
+  "sourceRoot": "apps/gull-e2e/src",
   "targets": {
     "e2e": {
       "executor": "@nx/playwright:playwright",
       "outputs": [
-        "{workspaceRoot}/dist/.playwright/apps/angular-nestjs-vite-e2e"
+        "{workspaceRoot}/dist/.playwright/apps/gull-e2e"
       ],
       "options": {
-        "config": "apps/angular-nestjs-vite-e2e/playwright.config.ts"
+        "config": "apps/gull-e2e/playwright.config.ts"
       }
     },
     "lint": {
@@ -19,12 +19,12 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "apps/angular-nestjs-vite-e2e/**/*.{js,ts}"
+          "apps/gull-e2e/**/*.{js,ts}"
         ]
       }
     }
   },
   "implicitDependencies": [
-    "angular-nestjs-vite"
+    "gull"
   ]
 }

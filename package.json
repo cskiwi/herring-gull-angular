@@ -54,6 +54,10 @@
     "vitest": "^0.34.6"
   },
   "overrides": {
+    "@nitedani/vite-plugin-angular": {
+      "@angular-devkit/build-angular": "17.0.3",
+      "@ngtools/webpack": "17.0.3"
+    },
     "@angular/core": {
       "zone.js": "^0.13.3"
     }
