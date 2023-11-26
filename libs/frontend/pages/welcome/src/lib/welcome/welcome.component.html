@@ -1,1 +1,14 @@
-<p>welcome works!</p>
+<h1>Hello</h1>
+
+@defer {
+<heavy-component></heavy-component>
+} @placeholder (minimum 500ms) {
+<!-- placeholder template fragment -->
+<p>Placeholder</p>
+} @loading {
+<!-- loading template fragment -->
+<p>Loading...</p>
+} @error {
+<!-- error template fragment -->
+<p>An loading error occured</p>
+}

@@ -1,6 +1,6 @@
 {
   "name": "gull",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "gull",
   "sourceRoot": "apps/gull/src",
@@ -28,44 +28,20 @@
         }
       }
     },
-    "build-dev": {
-      "executor": "@nx/vite:build",
-      "outputs": [
-        "{options.outputPath}",
-        "{workspaceRoot}/dist/client",
-        "{workspaceRoot}/dist/server"
-      ],
-      "options": {
-        "main": "apps/gull/src/main.ts",
-        "configFile": "apps/gull/vite.config.ts",
-        "logLevel": "info",
-        "outputPath": "dist/apps/gull/client"
-      },
-      "defaultConfiguration": "production",
-      "configurations": {
-        "development": {
-          "mode": "development"
-        },
-        "production": {
-          "sourcemap": false,
-          "mode": "production"
-        }
-      }
-    },
     "serve": {
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "gull:build-dev",
+        "buildTarget": "gull:build",
         "port": 5200
       },
       "configurations": {
         "development": {
-          "buildTarget": "gull:build-dev:development",
+          "buildTarget": "gull:build:development",
           "hmr": true
         },
         "production": {
-          "buildTarget": "gull:build-dev:production"
+          "buildTarget": "gull:build:production"
         }
       }
     },

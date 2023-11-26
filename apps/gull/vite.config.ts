@@ -1,6 +1,7 @@
 /// <reference types="vavite/vite-config" />
 
 import { angular } from '@nitedani/vite-plugin-angular/plugin';
+import * as path from 'path';
 import vavite from 'vavite';
 import { defineConfig } from 'vite';
 import tsConfigPaths from 'vite-tsconfig-paths';
@@ -16,4 +17,12 @@ export default defineConfig({
       root: '../../',
     }),
   ],
+  resolve: {
+    alias: {
+      '@gull/welcome': path.resolve(
+        __dirname,
+        '../../libs/frontend/pages/welcome/src/index.ts'
+      ),
+    },
+  },
 });
