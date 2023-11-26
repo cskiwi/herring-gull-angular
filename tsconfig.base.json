@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-monorepo/welcome": ["libs/frontend/pages/welcome/src/index.ts"]
+      "@gull/welcome": ["libs/frontend/pages/welcome/src/index.ts"]
     }
   },
   "include": ["env.d.ts"],

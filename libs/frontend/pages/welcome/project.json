@@ -2,7 +2,7 @@
   "name": "welcome",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/frontend/pages/welcome/src",
-  "prefix": "angular-monorepo",
+  "prefix": "gull",
   "tags": [],
   "projectType": "library",
   "targets": {

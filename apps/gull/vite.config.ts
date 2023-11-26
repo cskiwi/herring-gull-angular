@@ -1,16 +1,16 @@
 /// <reference types="vavite/vite-config" />
 
-import { defineConfig } from 'vite';
 import { angular } from '@nitedani/vite-plugin-angular/plugin';
-import tsConfigPaths from 'vite-tsconfig-paths';
 import vavite from 'vavite';
-import vercel from 'vite-plugin-vercel';
+import { defineConfig } from 'vite';
+import tsConfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
   },
+  
   plugins: [
     angular(),
     vavite({
@@ -20,6 +20,5 @@ export default defineConfig({
     tsConfigPaths({
       root: '../../',
     }),
-    vercel(),
   ],
 });

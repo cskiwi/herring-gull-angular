@@ -9,6 +9,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api');
 
+  console.log(import.meta.env.PROD)
+
   if (import.meta.env.PROD) {
     const port = import.meta.env.VITE_PORT || 3000;
     app.listen(port);

@@ -2,10 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'gull-welcome',
+  // selector: 'gull-welcome',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.scss',
 })
-export class WelcomeComponent {}
+export class WelcomeComponent {
+  constructor(){
+    console.log('WelcomeComponent');
+  }
+}

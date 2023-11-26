@@ -1,10 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [RouterModule],
-  selector: 'gull-root',
-  template: `<router-outlet></router-outlet>`,
+  imports: [CommonModule, RouterOutlet],
+  template: `test<router-outlet></router-outlet>`,
 })
 export class AppComponent {}
