@@ -12,7 +12,6 @@ import { SharedModule } from '../shared.module';
       imports: [SharedModule],
       // provide only on server
       providers: [],
-      cache: true,
     }),
   ],
 })
