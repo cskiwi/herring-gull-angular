@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 @Component({
   standalone: true,
   imports: [RouterModule],
-  selector: 'angular-monorepo-root',
+  selector: 'gull-root',
   template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {}
