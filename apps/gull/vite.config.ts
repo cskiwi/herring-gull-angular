@@ -1,8 +1,6 @@
-/// <reference types="vavite/vite-config" />
-
 import { angular } from '@nitedani/vite-plugin-angular/plugin';
 import * as path from 'path';
-import vavite from 'vavite';
+import { vavite } from 'vavite';
 import { defineConfig } from 'vite';
 import tsConfigPaths from 'vite-tsconfig-paths';
 

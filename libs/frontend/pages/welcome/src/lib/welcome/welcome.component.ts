@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, afterNextRender } from '@angular/core';
+import { Component, OnInit, afterNextRender } from '@angular/core';
 
 @Component({
   selector: 'heavy-component',
@@ -10,13 +10,11 @@ import { Component, afterNextRender } from '@angular/core';
     <p>{{ title }}</p>
   `,
 })
-export class HeavyComponent {
+export class HeavyComponent implements OnInit {
   title: string = 'Heavy Component';
 
-  constructor() {
-    afterNextRender(() => {
-      this.title = 'Heavy Component Loaded';
-    });
+  ngOnInit(): void {
+    this.title = 'Heavy Component Loaded';
   }
 }
 
