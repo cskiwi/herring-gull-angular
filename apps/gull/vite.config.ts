@@ -1,9 +1,10 @@
 import { angular } from '@nitedani/vite-plugin-angular/plugin';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 import { vavite } from 'vavite';
-import { defineConfig } from 'vite';
+import { defineConfig, splitVendorChunkPlugin } from 'vite';
 
 export default defineConfig({
+  publicDir: 'src/assets',
   plugins: [
     angular(),
     vavite({
@@ -11,5 +12,6 @@ export default defineConfig({
       serveClientAssetsInDev: true,
     }),
     nxViteTsPaths(),
+    splitVendorChunkPlugin(),
   ],
 });
