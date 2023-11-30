@@ -27,10 +27,11 @@ export class HeavyComponent implements OnInit {
   standalone: true,
   imports: [CommonModule, HeavyComponent],
   template: `
-    <h1>Hello</h1>
+    <h1>Load on server</h1>
     <some-component></some-component>
 
     @defer {
+    <h1>Load on client</h1>
     <some-component></some-component>
     } @placeholder {
     <!-- placeholder template fragment -->
@@ -44,6 +45,4 @@ export class HeavyComponent implements OnInit {
     }
   `,
 })
-export class WelcomeComponent {
-  
-}
+export class WelcomeComponent {}
