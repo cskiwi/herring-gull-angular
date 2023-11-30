@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { AngularRendererModule } from '@nitedani/angular-renderer-nestjs';
 import { AppComponent } from '../app/app.component';
 import { SharedModule } from '../shared.module';
+import { CatsController } from './test.controller';
 
 @Module({
   imports: [
@@ -11,9 +12,8 @@ import { SharedModule } from '../shared.module';
       // import only on server
       imports: [SharedModule],
       // provide only on server
-      providers: [],
     }),
   ],
+  controllers: [CatsController],
 })
 export class AppModule {}
-

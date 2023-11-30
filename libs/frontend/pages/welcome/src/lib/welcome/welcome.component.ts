@@ -1,26 +1,49 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, afterNextRender } from '@angular/core';
+import { Component, OnInit, afterNextRender, inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'heavy-component',
+  selector: 'some-component',
   standalone: true,
   imports: [CommonModule],
   template: `
-    HEAVY LOADED:
     <p>{{ title }}</p>
+    {{ cats$ | async | json }}
   `,
 })
 export class HeavyComponent implements OnInit {
-  title: string = 'Heavy Component';
+  private httpClient = inject(HttpClient);
+
+  cats$ = this.httpClient.get('/api/cats');
+  title: string = 'Some Component started';
 
   ngOnInit(): void {
-    this.title = 'Heavy Component Loaded';
+    this.title = 'Some Component Loaded';
   }
 }
 
 @Component({
   standalone: true,
   imports: [CommonModule, HeavyComponent],
-  templateUrl: './welcome.component.html',
+  template: `
+    <h1>Hello</h1>
+    <some-component></some-component>
+
+    @defer {
+    <some-component></some-component>
+    } @placeholder {
+    <!-- placeholder template fragment -->
+    <p>Placeholder</p>
+    } @loading {
+    <!-- loading template fragment -->
+    <p>Loading...</p>
+    } @error {
+    <!-- error template fragment -->
+    <p>An loading error occured</p>
+    }
+  `,
 })
-export class WelcomeComponent {}
+export class WelcomeComponent {
+  
+}
