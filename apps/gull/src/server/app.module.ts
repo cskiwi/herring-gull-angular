@@ -12,6 +12,7 @@ import { CatsController } from './test.controller';
       // import only on server
       imports: [SharedModule],
       // provide only on server
+      providers: [],
     }),
   ],
   controllers: [CatsController],

@@ -1,7 +1,7 @@
-import { renderPage } from '@nitedani/vite-plugin-angular/client';
 import { provideHttpClient } from '@angular/common/http';
-import { AppComponent } from './app.component';
+import { renderPage } from '@nitedani/vite-plugin-angular/client';
 import { SharedModule } from '../shared.module';
+import { AppComponent } from './app.component';
 
 renderPage({
   page: AppComponent,
