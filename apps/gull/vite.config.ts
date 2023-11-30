@@ -4,7 +4,7 @@ import { vavite } from 'vavite';
 import { defineConfig, splitVendorChunkPlugin } from 'vite';
 
 export default defineConfig({
-  publicDir: 'src/assets',
+  publicDir: 'src/public',
   plugins: [
     angular(),
     vavite({
