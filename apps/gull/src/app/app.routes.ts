@@ -4,6 +4,6 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('@gull/welcome').then((m) => m.WelcomeComponent),
+      import('@gull/welcome').then((m) => m.WelcomePageComponent),
   },
 ];

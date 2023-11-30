@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, afterNextRender, inject } from '@angular/core';
-import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'some-component',
@@ -45,4 +45,11 @@ export class HeavyComponent implements OnInit {
     }
   `,
 })
-export class WelcomeComponent {}
+export class WelcomePageComponent {
+  title = inject(Title)
+
+  constructor() {
+    this.title.setTitle('Welcome!');
+  }
+}
+
