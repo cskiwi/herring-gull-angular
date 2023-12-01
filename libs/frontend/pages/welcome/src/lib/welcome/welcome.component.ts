@@ -1,15 +1,30 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, afterNextRender, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Component, OnInit, inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'some-component',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatCardModule, MatButtonModule],
   template: `
     <p>{{ title }}</p>
     {{ cats$ | async | json }}
+
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Some Component</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Some Component Content</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary">Some Action</button>
+      </mat-card-actions>
+    </mat-card>
   `,
 })
 export class HeavyComponent implements OnInit {
@@ -46,10 +61,9 @@ export class HeavyComponent implements OnInit {
   `,
 })
 export class WelcomePageComponent {
-  title = inject(Title)
+  title = inject(Title);
 
   constructor() {
     this.title.setTitle('Welcome!');
   }
 }
-

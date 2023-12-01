@@ -53,13 +53,19 @@
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["{projectRoot}/coverage"]
+      "outputs": [
+        "{projectRoot}/coverage"
+      ]
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/gull/**/*.{ts,html}"]
+        "lintFilePatterns": [
+          "apps/gull/**/*.{ts,html}"
+        ]
       }
     }
   }
