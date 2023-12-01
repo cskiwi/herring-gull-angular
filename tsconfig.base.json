@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@gull/components": ["libs/frontend/components/src/index.ts"],
       "@gull/welcome": ["libs/frontend/pages/welcome/src/index.ts"]
     }
   },

@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { WelcomePageComponent } from '@gull/welcome';
+import { NavigationComponent } from '@gull/components';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterOutlet, WelcomePageComponent],
-  template: `<router-outlet></router-outlet>`,
+  imports: [CommonModule, RouterOutlet, NavigationComponent],
+  template: ` <gull-navigation>
+    <router-outlet></router-outlet>
+  </gull-navigation>`,
 })
 export class AppComponent {}
