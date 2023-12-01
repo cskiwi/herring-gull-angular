@@ -1,0 +1,13 @@
+@use './src/lib/navigation.component.theme.scss' as navigation;
+
+@mixin theme($theme) {
+  @include navigation.theme($theme);
+}
+
+@mixin typography($theme) {
+  @include navigation.typography($theme);
+}
+
+@mixin color($theme) {
+  @include navigation.color($theme);
+}

@@ -6,7 +6,7 @@ import { defineConfig, splitVendorChunkPlugin } from 'vite';
 export default defineConfig({
   publicDir: 'src/public',
   build: {
-    outDir: '../../dist/apps/gull',
+    outDir: '../../dist/apps/gull'
   },
   plugins: [
     angular(),
