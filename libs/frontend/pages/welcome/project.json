@@ -31,14 +31,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "libs/frontend/pages/welcome/**/*.ts",
-          "libs/frontend/pages/welcome/**/*.html",
-          "libs/frontend/pages/welcome/package.json"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   }
 }
