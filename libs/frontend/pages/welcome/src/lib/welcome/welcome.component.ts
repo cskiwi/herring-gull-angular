@@ -59,6 +59,12 @@ export class HeavyComponent implements OnInit {
     <p>An loading error occured</p>
     }
   `,
+  styles: `
+    :host{
+      display: block;
+      padding: 1rem;
+    }
+  `
 })
 export class WelcomePageComponent {
   title = inject(Title);
