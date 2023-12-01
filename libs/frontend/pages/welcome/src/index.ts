@@ -1,1 +1,1 @@
-export * from './lib/welcome/welcome.component';
+export * from './welcome/welcome.component';

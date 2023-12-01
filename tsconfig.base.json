@@ -16,6 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@gull/components": ["libs/frontend/components/src/index.ts"],
+      "@gull/page1": ["libs/frontend/pages/page1/src/index.ts"],
+      "@gull/page2": ["libs/frontend/pages/page2/src/index.ts"],
       "@gull/welcome": ["libs/frontend/pages/welcome/src/index.ts"]
     }
   },

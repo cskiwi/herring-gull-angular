@@ -1,4 +1,4 @@
-@use './src/lib/navigation.component.theme.scss' as navigation;
+@use './src/navigation/navigation.component.theme.scss' as navigation;
 
 @mixin theme($theme) {
   @include navigation.theme($theme);
