@@ -4,10 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build --skip-nx-cache",
+    "build": "nx build",
     "test": "nx test",
-    "lint": "nx lint",
-    "postinstall": "nx reset"
+    "lint": "nx lint"
   },
   "engines": {
     "node": ">=20.10.0"
