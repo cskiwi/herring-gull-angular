@@ -8,7 +8,6 @@ import { fader } from './app.transistions';
   standalone: true,
   imports: [CommonModule, RouterOutlet, NavigationComponent],
   template: ` <gull-navigation>
-    {{ prepareRoute(outlet) }}
     <div [@routeAnimations]="prepareRoute(outlet)">
       <router-outlet #outlet="outlet"></router-outlet>
     </div>
