@@ -1,8 +1,8 @@
 // needs to be first import, it loads the polyfills
 import { Module } from '@nestjs/common';
 import { AngularRendererModule } from '@nitedani/angular-renderer-nestjs';
-import { AppComponent } from '../app/app.component';
-import { SharedModule } from '../shared.module';
+import { AppComponent } from '../src/app/app.component';
+import { SharedModule } from '../src/shared.module';
 
 @Module({
   imports: [

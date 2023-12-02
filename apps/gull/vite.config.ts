@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     angular(),
     vavite({
-      serverEntry: '/src/server/main.ts',
+      serverEntry: './server/main.ts',
       serveClientAssetsInDev: true,
     }),
     tsConfigPaths({
