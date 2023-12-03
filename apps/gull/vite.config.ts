@@ -6,12 +6,12 @@ import { defineConfig, splitVendorChunkPlugin } from 'vite';
 export default defineConfig({
   publicDir: 'src/public',
   build: {
-    outDir: '../../dist/apps/gull'
+    outDir: '../../dist/apps/gull',
   },
   plugins: [
     angular(),
     vavite({
-      serverEntry: '/src/server/main.ts',
+      serverEntry: './src/server/main.ts',
       serveClientAssetsInDev: true,
     }),
     nxViteTsPaths(),
