@@ -22,7 +22,7 @@ import { MatCardModule } from '@angular/material/card';
         <p>Some Component Content</p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button color="primary">Some Action</button>
+        <button mat-stroked-button>Some Action</button>
       </mat-card-actions>
     </mat-card>
   `,
