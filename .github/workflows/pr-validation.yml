@@ -17,14 +17,15 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - name: Build application
-        run: nx build demoapp
+      - name: Build affected 
+        run: nx affected -t build
 
-      - name: Run unit tests for components library
-        run: nx test components
+      - name: Run unit test
+        run: nx affected -t test
 
-      - name: Run unit tests for page1 library
-        run: nx test page1
+      - name: Run lint
+        run: nx affected -t lint
+
 
       - name: Run end-to-end tests
         run: nx e2e gull-e2e
