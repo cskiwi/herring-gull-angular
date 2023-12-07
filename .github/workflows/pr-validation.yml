@@ -17,14 +17,14 @@ jobs:
       - name: Install dependencies
         run: npm i
 
+      - name: Lint affected 
+        run: npx nx affected --target=lint
+
+      - name: Test affected 
+        run: npx nx affected --target=test
+
       - name: Build affected 
-        run: nx affected -t build
-
-      - name: Run unit test
-        run: nx affected -t test
-
-      - name: Run lint
-        run: nx affected -t lint
+        run: npx nx affected --target=build
 
 
       - name: Run end-to-end tests
