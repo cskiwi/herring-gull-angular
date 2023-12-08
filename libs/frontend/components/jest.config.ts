@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default {
   displayName: 'components',
-  preset: '../../../jest.preset.js',
+  preset: '../../../jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../coverage/libs/frontend/components',
   transform: {
