@@ -3,6 +3,9 @@ name: Release
 on:
   workflow_dispatch:
 
+permissions:
+  pull-requests: write
+  contents: write
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
