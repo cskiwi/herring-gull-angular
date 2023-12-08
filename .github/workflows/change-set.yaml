@@ -17,3 +17,4 @@ jobs:
           use-semantic-commits: true
           author-name: Renovate Changesets
           author-email: github+renovate@scharley.me
+          token: ${{ secrets.GITHUB_TOKEN }}
