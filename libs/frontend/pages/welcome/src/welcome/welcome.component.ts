@@ -42,11 +42,12 @@ export class HeavyComponent implements OnInit {
   standalone: true,
   imports: [CommonModule, HeavyComponent],
   template: `
-    <h1>Load on server</h1>
+    <h1>Welcome to gull!</h1>
+    <h2>Load on server</h2>
     <gull-some-component></gull-some-component>
 
     @defer {
-    <h1>Load on client</h1>
+    <h2>Load on client</h2>
     <gull-some-component></gull-some-component>
     } @placeholder {
     <!-- placeholder template fragment -->

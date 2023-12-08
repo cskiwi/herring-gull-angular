@@ -12,9 +12,8 @@ jobs:
 
     steps:
       - name: Update PR
-        uses: mscharley/dependency-changesets-action@v1.0.5
+        uses: mscharley/dependency-changesets-action@v1.0.6
         with:
-          use-semantic-commits: true
           author-name: Renovate Changesets
           author-email: github+renovate@scharley.me
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}f
