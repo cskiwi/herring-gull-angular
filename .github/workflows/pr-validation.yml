@@ -1,4 +1,4 @@
-name: pr-validation
+name: Run Lint, Test, and Build
 
 on:
   push:
