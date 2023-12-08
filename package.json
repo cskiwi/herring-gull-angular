@@ -47,7 +47,7 @@
     "@angular/cli": "~17.0.0",
     "@angular/compiler-cli": "17.0.6",
     "@angular/language-service": "17.0.6",
-    "@nitedani/angular-renderer-core": "17.0.8",
+    "@nitedani/angular-renderer-core": "17.0.10",
     "@nitedani/angular-renderer-express": "17.0.8",
     "@nitedani/angular-renderer-nestjs": "17.0.8",
     "@nitedani/vite-plugin-angular": "17.0.8",
