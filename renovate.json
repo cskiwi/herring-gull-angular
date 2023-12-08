@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":label(dependencies)", "monorepo:nrwl"],
-  "semanticCommits": "enabled",
+  "extends": ["config:base", ":label(dependencies)", "monorepo:nrwl", ":semanticCommits"],
   "dependencyDashboardApproval": true,
   "gitIgnoredAuthors": ["github+renovate@scharley.me"],
   "packageRules": [
