@@ -1,9 +1,6 @@
 name: Run Lint, Test, and Build
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
 
 # Needed for nx-set-shas within nx-cloud-main.yml, when run on the master branch
