@@ -29,6 +29,7 @@ jobs:
         npx nx affected --target=build --parallel=3
 
   test:
+    needs: main
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
