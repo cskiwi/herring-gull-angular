@@ -16,4 +16,4 @@ jobs:
         with:
           author-name: Renovate Changesets
           author-email: github+renovate@scharley.me
-          token: ${{ secrets.GITHUB_TOKEN }}f
+          token: ${{ secrets.GITHUB_TOKEN }}
