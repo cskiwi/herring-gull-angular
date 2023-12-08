@@ -9,7 +9,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  providers: [provideHttpClient(withFetch())],a
+  providers: [provideHttpClient(withFetch())],
 })
 export class SharedModule {
   constructor() {}
