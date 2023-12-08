@@ -3,6 +3,7 @@
   "extends": ["config:base", ":label(dependencies)", "monorepo:nrwl"],
   "semanticCommits": "enabled",
   "dependencyDashboardApproval": true,
+  "gitIgnoredAuthors": ["github+renovate@scharley.me"],
   "packageRules": [
     {
       "groupName": "nitedani",
