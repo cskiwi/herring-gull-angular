@@ -17,5 +17,11 @@ export default defineConfig({
     nxViteTsPaths(),
     splitVendorChunkPlugin(),
   ],
-
+  server: {
+    fs: {
+      allow: [
+        '../../node_modules/@fontsource/roboto/files/',
+      ],
+    },
+  },
 });
