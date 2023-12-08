@@ -7,7 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'some-component',
+  selector: 'gull-some-component',
   standalone: true,
   imports: [CommonModule, MatCardModule, MatButtonModule],
   template: `
@@ -43,11 +43,11 @@ export class HeavyComponent implements OnInit {
   imports: [CommonModule, HeavyComponent],
   template: `
     <h1>Load on server</h1>
-    <some-component></some-component>
+    <gull-some-component></gull-some-component>
 
     @defer {
     <h1>Load on client</h1>
-    <some-component></some-component>
+    <gull-some-component></gull-some-component>
     } @placeholder {
     <!-- placeholder template fragment -->
     <p>Placeholder</p>

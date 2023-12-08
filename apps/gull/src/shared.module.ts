@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routes } from './app/app.routes';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+
+
 
 // This module is imported on client, inside src/app/main.ts
 // This module is imported on server, inside src/server/app.module.ts
@@ -8,10 +11,8 @@ import { routes } from './app/app.routes';
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  providers: [],
+  providers: [provideHttpClient(withFetch())],
 })
 export class SharedModule {
   constructor() {}
-
-
 }
