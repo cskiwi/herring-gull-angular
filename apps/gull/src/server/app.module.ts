@@ -17,7 +17,7 @@ import { BackendCatsModule } from '@gull/backend-cats';
     }),
 
     // Server imports
-    BackendCatsModule
+    BackendCatsModule,
   ],
   controllers: [],
 })

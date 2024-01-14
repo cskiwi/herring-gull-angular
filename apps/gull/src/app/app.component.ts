@@ -13,7 +13,6 @@ import { fader } from './app.transitions';
     </div>
   </gull-navigation>`,
   animations: [fader],
-  // styleUrls: ['../styles.scss'],
 })
 export class AppComponent {
   prepareRoute(outlet: RouterOutlet) {
