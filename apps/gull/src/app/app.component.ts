@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavigationComponent } from '@gull/components';
-import { fader } from './app.transistions';
+import { NavigationComponent } from '@gull/frontend-components';
+import { fader } from './app.transitions';
 
 @Component({
   standalone: true,

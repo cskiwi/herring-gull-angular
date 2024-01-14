@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'page1',
+  displayName: 'frontend-page1',
   preset: '../../../../jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../../coverage/libs/frontend/pages/page1',

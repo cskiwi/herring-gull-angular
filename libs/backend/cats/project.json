@@ -1,0 +1,31 @@
+{
+  "name": "backend-cats",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/backend/cats/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/backend/cats",
+        "tsConfig": "libs/backend/cats/tsconfig.lib.json",
+        "packageJson": "libs/backend/cats/package.json",
+        "main": "libs/backend/cats/src/index.ts",
+        "assets": ["libs/backend/cats/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/backend/cats/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}

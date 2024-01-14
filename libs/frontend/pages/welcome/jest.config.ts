@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'welcome',
+  displayName: 'frontend-welcome',
   preset: '../../../../jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   coverageDirectory: '../../../../coverage/libs/frontend/pages/welcome',

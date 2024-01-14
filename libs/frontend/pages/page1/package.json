@@ -1,5 +1,5 @@
 {
-  "name": "@gull/page1",
+  "name": "@gull/frontend-page1",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.0.0",

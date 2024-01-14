@@ -1,5 +1,5 @@
 {
-  "name": "page1",
+  "name": "frontend-page1",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/frontend/pages/page1/src",
   "prefix": "gull",

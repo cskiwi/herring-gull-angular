@@ -1,5 +1,5 @@
 {
-  "name": "components",
+  "name": "frontend-components",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/frontend/components/src",
   "prefix": "gull",

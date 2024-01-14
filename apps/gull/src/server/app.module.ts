@@ -3,8 +3,8 @@ import { Module } from '@nestjs/common';
 import { AngularRendererModule } from '@nitedani/angular-renderer-nestjs';
 import { AppComponent } from '../app/app.component';
 import { SharedModule } from '../shared.module';
-import { CatsController } from './test.controller';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
+import { BackendCatsModule } from '@gull/backend-cats';
 
 @Module({
   imports: [
@@ -15,7 +15,10 @@ import { provideNoopAnimations } from '@angular/platform-browser/animations';
       // provide only on server
       providers: [provideNoopAnimations()],
     }),
+
+    // Server imports
+    BackendCatsModule
   ],
-  controllers: [CatsController],
+  controllers: [],
 })
 export class AppModule {}

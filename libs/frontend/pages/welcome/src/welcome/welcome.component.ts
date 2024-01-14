@@ -47,17 +47,17 @@ export class HeavyComponent implements OnInit {
     <gull-some-component></gull-some-component>
 
     @defer {
-    <h2>Load on client</h2>
-    <gull-some-component></gull-some-component>
+      <h2>Load on client</h2>
+      <gull-some-component></gull-some-component>
     } @placeholder {
-    <!-- placeholder template fragment -->
-    <p>Placeholder</p>
+      <!-- placeholder template fragment -->
+      <p>Placeholder</p>
     } @loading {
-    <!-- loading template fragment -->
-    <p>Loading...</p>
+      <!-- loading template fragment -->
+      <p>Loading...</p>
     } @error {
-    <!-- error template fragment -->
-    <p>An loading error occured</p>
+      <!-- error template fragment -->
+      <p>An loading error occured</p>
     }
   `,
   styles: `
@@ -65,7 +65,7 @@ export class HeavyComponent implements OnInit {
       display: block;
       padding: 1rem;
     }
-  `
+  `,
 })
 export class WelcomePageComponent {
   title = inject(Title);

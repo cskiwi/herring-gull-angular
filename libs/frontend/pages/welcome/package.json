@@ -1,5 +1,5 @@
 {
-  "name": "@gull/welcome",
+  "name": "@gull/frontend-welcome",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.0.0",
@@ -7,6 +7,5 @@
     "@angular/material": "^17.0.0",
     "@angular/platform-browser": "^17.0.0"
   },
-
   "sideEffects": false
 }

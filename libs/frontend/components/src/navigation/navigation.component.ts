@@ -43,10 +43,12 @@ export class NavigationComponent {
   isHandset = toSignal(
     this.breakpointObserver
       .observe(['(max-width: 959.98px)'])
-      .pipe(map((result) => result.matches))
+      .pipe(map((result) => result.matches)),
   );
   isServer = isPlatformBrowser(this.platform) === false;
-  showSidenav = computed(() => this.isHandset() === false && this.isServer === false);
+  showSidenav = computed(
+    () => this.isHandset() === false && this.isServer === false,
+  );
 
   loading = false;
 }

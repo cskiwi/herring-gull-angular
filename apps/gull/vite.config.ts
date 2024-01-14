@@ -8,8 +8,13 @@ export default defineConfig({
   build: {
     outDir: '../../dist/apps/gull',
   },
+  ssr: {
+    
+  },
   plugins: [
-    angular(),
+    angular({
+      swc: true,
+    }),
     vavite({
       serverEntry: './src/server/main.ts',
       serveClientAssetsInDev: true,
