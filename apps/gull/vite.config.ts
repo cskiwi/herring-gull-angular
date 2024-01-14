@@ -21,6 +21,7 @@ export default defineConfig({
     fs: {
       allow: [
         '../../node_modules/@fontsource/roboto/files/',
+        '../../node_modules/material-icons/iconfont/',
       ],
     },
   },
