@@ -44,6 +44,7 @@ export class HeavyComponent implements OnInit {
   imports: [CommonModule, HeavyComponent],
   template: `
     <h1>Welcome to gull!</h1>
+
     <h2>Load on server</h2>
     <gull-some-component></gull-some-component>
 
@@ -53,9 +54,6 @@ export class HeavyComponent implements OnInit {
     } @placeholder {
       <!-- placeholder template fragment -->
       <p>Placeholder</p>
-    } @loading {
-      <!-- loading template fragment -->
-      <p>Loading...</p>
     } @error {
       <!-- error template fragment -->
       <p>An loading error occured</p>
