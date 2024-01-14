@@ -30,6 +30,7 @@
     "@nestjs/platform-express": "^10.3.0",
     "@nx/angular": "17.2.8",
     "material-icons": "^1.13.12",
+    "ngxtension": "^1.9.9",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^7.8.1",
     "tslib": "^2.6.2",
@@ -93,4 +94,3 @@
     "node": "20.10.0"
   }
 }
-
